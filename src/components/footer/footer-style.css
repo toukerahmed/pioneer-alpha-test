@@ -1,0 +1,17 @@
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: #bcb2ff;
+}
+footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+}
+@media only screen and (max-width: 900px) {
+	footer .container {
+		height: 60px;
+	}
+}

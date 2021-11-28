@@ -1,0 +1,113 @@
+header {
+	position: relative;
+}
+.header-container {
+	display: flex;
+	padding: 10px 0;
+	align-items: center;
+}
+.logo {
+	margin-right: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	width: 20px;
+}
+.menu-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex: 1;
+}
+
+.menu-list li {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+.avatar-container {
+	align-self: flex-end;
+	position: relative;
+	padding: 5px 15px;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 3px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.avatar-container .mobile-bar {
+	display: none;
+}
+.avatar-container.open span {
+	transform: rotate(-90deg);
+}
+.avatar-container svg {
+	height: 20px;
+	width: 20px;
+}
+.avatar {
+	background-image: url('https://avatars.dicebear.com/api/male/john.svg?background=%230000ff');
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+}
+.avatar-container span {
+	position: absolute;
+	transform: rotate(90deg);
+	right: 7px;
+	top: 30%;
+	color: rgb(179, 179, 179);
+	transition: 0.2s linear 0s;
+}
+
+.side-slogan {
+	background: radial-gradient(150.69% 1435% at 20.62% 18.55%, #afaaff 10.67%, #90d6f1 83.33%, #90d6f1 98.54%);
+	padding: 48px 0;
+}
+.side-slogan .title {
+	margin: 0;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 140%;
+}
+.side-slogan p {
+	color: white;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+@media only screen and (max-width: 900px) {
+	.header-container {
+		padding-left: 0;
+		padding-right: 0;
+		justify-content: space-between;
+		width: 95%;
+	}
+	.avatar-container {
+		align-self: flex-end;
+	position: relative;
+	padding: 4px 8px;
+	background: rgba(0, 0, 0, 0.08);
+	border-radius: 3px;
+	padding-right: 10px;
+	cursor: pointer;;
+	}
+	.menu-list {
+		display: none;
+	}
+	.avatar-container span {
+		position: absolute;
+	transform: rotate(90deg);
+	right: 0px;
+	top: 40%;
+	color: rgb(179, 179, 179);
+	transition: 0.2s linear 0s;
+	}
+	.avatar-container .mobile-bar {
+		display: block;
+	}
+	.avatar-container .desktop {
+		display: none;
+	}
+	.side-slogan {
+		padding: 28px 0;
+	}
+}
